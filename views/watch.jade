@@ -1,0 +1,41 @@
+html
+  link(href="css/bezier.css", rel='stylesheet')
+  style.
+    .title { color:white; text-align: center;}
+  body
+    h1.title Watching...
+    canvas#canvas
+    canvas#tmpCanvas
+    script(src='/js/point.js')
+    script(src='/js/canvas_state.js')
+    script(src='/js/array_plugin.js')
+    script(src='https://code.jquery.com/jquery-3.2.1.min.js'
+          integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='
+          crossorigin='anonymous')
+    script(src='/js/bezier/spectator.js')
+    script.
+      var canvasState = new CanvasState();
+      var spectator = new Spectator();
+
+      var setCanvasSize = function(canvas){
+        canvas.width = window.innerWidth
+        canvas.height = window.innerHeight
+      }
+      
+      var canvas = document.getElementById('canvas');
+      var tmpCanvas = document.getElementById('tmpCanvas');
+      setCanvasSize(canvas);
+      setCanvasSize(tmpCanvas);
+      var ctx = canvas.getContext ( "2d" );
+      var tmpCTX = tmpCanvas.getContext ( "2d" );
+
+      spectator.addPlugin(canvasState, ctx, tmpCTX);
+
+      ctx.save ();
+      var radius = 5;
+      var counter = 0;
+      var bezierStartPoint;
+
+      $(document).ready(function() {
+
+      });

@@ -1,0 +1,28 @@
+{
+  "name": "draw_bezier_curves",
+  "version": "1.0.0",
+  "description": "simple drawing app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "Drawing",
+    "Game",
+    "Development"
+  ],
+  "author": "Ty Connors",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.6.0",
+    "async-foreach": "^0.1.3",
+    "body-parser": "^1.18.2",
+    "express": "^4.15.4",
+    "jade": "^1.11.0",
+    "mongoose": "4.10.8",
+    "mongoose-auto-increment": "^5.0.1",
+    "morgan": "^1.8.2",
+    "websocket": "^1.0.25"
+  }
+}

@@ -1,0 +1,184 @@
+body {
+  color: white;
+}
+#canvas {
+  background: #222;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.save{
+  position: absolute;
+  top: 55px;
+  left: 10px;
+  width: 60px;
+  height: 30px;
+}
+
+.UIbtn {
+  color: white;
+  z-index: 1;
+  border-width: 0;
+  background: url('../img/UI/button_normal.png');
+  background-size: 60px 30px;
+  z-index: 10;
+}
+.UIbtn:hover{
+  background: url('../img/UI/button_hover.png');
+  background-size: 60px 30px;
+  z-index: 10;
+}
+.UIbtn:active, .UIbtn:focus {
+  outline:0;
+}
+
+#tmpCanvas {
+  background: rgba(0, 0, 0, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+#crosshairCanvas {
+  background: rgba(0, 0, 0, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: lightgrey;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: lightgrey;
+}
+.canvas_name {
+
+  border-radius: 8px;
+  background: url('../img/UI/input1.png');
+  background-size: 165px 40px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 165px;
+  height: 40px;
+  padding-top: 4px;
+  padding-left: 15px;
+  z-index:100;
+}
+input[name=canvas_name]:active, input[name=canvas_name]:focus {
+  border-width: none;
+  outline:0;
+}
+input[name=canvas_name]{
+  background: rgba(0,0,0,0);
+  width: 165px;
+  height: 30px;
+  border-width: 0;
+  z-index: 100;
+  color: white;
+}
+.onsave-msg{
+  position: absolute;
+  top: 60px;
+  left: 80px;
+  z-index: 1;
+  color: white;
+  display: none;
+}
+.load{
+  position: absolute;
+  top: 90px;
+  left: 10px;
+  width: 60px;
+  height: 30px;
+  z-index: 10;
+}
+.load_menu{
+  margin: 20px;
+  overflow-y:scroll;
+  height: 600px;
+  width: 150px;
+  z-index: 10;
+}
+.instructions {
+  color: white;
+}
+.instructions li {
+  color: white;
+  width: 180px;
+  list-style: decimal;
+}
+.menu {
+  display: none;
+}
+.loadable{
+  position: absolute;
+  top: 120px;
+  left: 10px;
+  width: 100px;
+  height: 200px;
+  z-index: 10;
+}
+.coordinate-log {
+  position: absolute;
+  top: 50px;
+  right: 250px;
+  color: white;
+  z-index: 10;
+}
+.canvas_indices{
+  border-width: 0;
+  color: white;
+  background: url('../img/UI/button_normal.png');
+  background-size: 90px 40px;
+  width: 90px;
+  height: 40px;
+}
+.canvas_indices:hover{
+  border-width: 0;
+  color: white;
+  background: url('../img/UI/button_hover.png');
+  background-size: 90px 40px;
+  width: 90px;
+  height: 40px;
+  z-index: 10
+}
+.canvas_indices:active, .canvas_indices:focus{
+  border-width: 0;
+  border-style: none;
+  outline:0;
+  background: url('../img/UI/button_active.png');
+  background-size: 90px 40px;
+}
+.title {
+  position: relative;
+  white-space:nowrap;
+  z-index: 15;
+}
+.title-panel {
+  position: relative;
+  background: url('../img/titleBG1.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 80px;
+  z-index: 11;
+  text-align: center;
+  display: inline-block; 
+
+}
+.viewers {
+  display: none;
+  position: absolute;
+  right: 10px;
+  top: 120px;
+  width: 12%;
+  z-index: 1;
+  border-left: 2px solid #fff;
+}
+.viewers ul {
+  list-style: none;
+}
+.viewers h3 {
+  text-align: center;
+}
